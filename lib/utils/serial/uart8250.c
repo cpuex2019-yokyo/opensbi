@@ -15,16 +15,16 @@
 #define UART_RBR_OFFSET		0	/* In:  Recieve Buffer Register */
 #define UART_THR_OFFSET		0	/* Out: Transmitter Holding Register */
 #define UART_DLL_OFFSET		0	/* Out: Divisor Latch Low */
-#define UART_IER_OFFSET		1	/* I/O: Interrupt Enable Register */
-#define UART_DLM_OFFSET		1	/* Out: Divisor Latch High */
-#define UART_FCR_OFFSET		2	/* Out: FIFO Control Register */
-#define UART_IIR_OFFSET		2	/* I/O: Interrupt Identification Register */
-#define UART_LCR_OFFSET		3	/* Out: Line Control Register */
-#define UART_MCR_OFFSET		4	/* Out: Modem Control Register */
-#define UART_LSR_OFFSET		5	/* In:  Line Status Register */
-#define UART_MSR_OFFSET		6	/* In:  Modem Status Register */
-#define UART_SCR_OFFSET		7	/* I/O: Scratch Register */
-#define UART_MDR1_OFFSET	8	/* I/O:  Mode Register */
+#define UART_IER_OFFSET		4	/* I/O: Interrupt Enable Register */
+#define UART_DLM_OFFSET		4	/* Out: Divisor Latch High */
+#define UART_FCR_OFFSET		8	/* Out: FIFO Control Register */
+#define UART_IIR_OFFSET		8	/* I/O: Interrupt Identification Register */
+#define UART_LCR_OFFSET		12	/* Out: Line Control Register */
+#define UART_MCR_OFFSET		16	/* Out: Modem Control Register */
+#define UART_LSR_OFFSET		20	/* In:  Line Status Register */
+#define UART_MSR_OFFSET		24	/* In:  Modem Status Register */
+#define UART_SCR_OFFSET		28	/* I/O: Scratch Register */
+#define UART_MDR1_OFFSET	32	/* I/O:  Mode Register */
 
 #define UART_LSR_FIFOE		0x80    /* Fifo error */
 #define UART_LSR_TEMT		0x40    /* Transmitter empty */
